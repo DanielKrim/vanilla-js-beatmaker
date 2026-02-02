@@ -1,55 +1,279 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
-      href="https://fonts.googleapis.com/css?family=Raleway"
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Tap Music</title>
+    <title>SmartCell | חנות סלולר מקצועית</title>
   </head>
   <body>
-    <section class="app">
-      <header>
-        <h1>Tap Music</h1>
-        <p>Create sounds with just one tap</p>
-      </header>
-      <div class="visual"></div>
-      <div class="pads">
-        <div class="pad1">
-          <audio src="./sounds/bubbles.mp3" class="sound"></audio>
-        </div>
-        <div class="pad2">
-          <audio class="sound">
-            <source src="./sounds/clay.mp3" />
-          </audio>
-        </div>
-        <div class="pad3">
-          <audio class="sound">
-            <source src="./sounds/confetti.mp3" />
-          </audio>
-        </div>
-        <div class="pad4">
-          <audio class="sound">
-            <source src="./sounds/glimmer.mp3" />
-          </audio>
-        </div>
-        <div class="pad5">
-          <audio class="sound">
-            <source src="./sounds/moon.mp3" />
-          </audio>
-        </div>
-        <div class="pad6">
-          <audio class="sound">
-            <source src="./sounds/ufo.mp3" />
-          </audio>
+    <header class="top-nav">
+      <div class="brand">
+        <div class="logo">SC</div>
+        <div>
+          <p class="brand-name">SmartCell</p>
+          <p class="brand-sub">פתרונות סלולר מתקדמים</p>
         </div>
       </div>
-    </section>
+      <nav class="nav-links" aria-label="ניווט ראשי">
+        <a href="#hero">ראשי</a>
+        <a href="#products">מוצרים</a>
+        <a href="#services">שירותים</a>
+        <a href="#contact">צור קשר</a>
+      </nav>
+      <button class="primary-btn nav-cta" data-scroll="#contact">לקביעת פגישה</button>
+      <button class="menu-toggle" aria-label="פתח תפריט">☰</button>
+    </header>
 
-    <script src="index.js"></script>
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero-content">
+          <p class="pill">חנות סלולר עם שירות אנושי ומהיר</p>
+          <h1>מגוון עצום של סמארטפונים, אביזרים ותיקונים במקום אחד</h1>
+          <p class="hero-text">
+            ב-SmartCell תמצאו את המותגים המובילים, אחריות מלאה ואנשי מקצוע שחיים
+            ונושמים סלולר. שירות אישי, משלוחים מהירים ותמיכה בעברית.
+          </p>
+          <div class="hero-actions">
+            <button class="primary-btn" data-scroll="#products">לגלריית מוצרים</button>
+            <button class="ghost-btn" data-scroll="#services">למה לבחור בנו?</button>
+          </div>
+          <div class="stats">
+            <div>
+              <p class="stat-value">12K+</p>
+              <p class="stat-label">לקוחות מרוצים</p>
+            </div>
+            <div>
+              <p class="stat-value">350+</p>
+              <p class="stat-label">דגמי טלפונים במלאי</p>
+            </div>
+            <div>
+              <p class="stat-value">24</p>
+              <p class="stat-label">חודשי אחריות זמינה</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="glass-card">
+            <p class="card-title">ההמלצות שלנו</p>
+            <div class="device-list">
+              <div class="device">
+                <div class="device-icon">📱</div>
+                <div>
+                  <p class="device-name">Galaxy S24 Pro</p>
+                  <p class="device-meta">5G | מצלמה 200MP</p>
+                </div>
+                <span class="price-tag">₪4,190</span>
+              </div>
+              <div class="device">
+                <div class="device-icon">📱</div>
+                <div>
+                  <p class="device-name">iPhone 15</p>
+                  <p class="device-meta">128GB | צבעים חדשים</p>
+                </div>
+                <span class="price-tag">₪3,690</span>
+              </div>
+              <div class="device">
+                <div class="device-icon">🎧</div>
+                <div>
+                  <p class="device-name">AirPods Pro 2</p>
+                  <p class="device-meta">סינון רעשים חכם</p>
+                </div>
+                <span class="price-tag">₪879</span>
+              </div>
+            </div>
+          </div>
+          <div class="accent-circle"></div>
+          <div class="accent-circle thin"></div>
+        </div>
+      </section>
+
+      <section class="section products" id="products">
+        <div class="section-header">
+          <p class="pill">מוצרים חמים</p>
+          <h2>הכי חדשים והכי מבוקשים</h2>
+          <p class="section-sub">סמארטפונים, אביזרים וגאדג'טים שמגיעים עם אחריות מלאה.</p>
+        </div>
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="badge">חדש</div>
+            <h3>iPhone 15 Pro</h3>
+            <p class="product-meta">256GB | צבע כחול טיטניום</p>
+            <p class="product-price">₪4,890</p>
+            <ul>
+              <li>מסך 6.1" Super Retina XDR</li>
+              <li>מעבד A17 Pro לביצועים מקסימליים</li>
+              <li>טעינה מהירה ו-USB-C</li>
+            </ul>
+            <button class="secondary-btn" data-scroll="#contact">בדיקת זמינות</button>
+          </article>
+          <article class="product-card">
+            <div class="badge alt">במלאי</div>
+            <h3>Samsung Galaxy A55</h3>
+            <p class="product-meta">128GB | ערכת אחריות מורחבת</p>
+            <p class="product-price">₪1,790</p>
+            <ul>
+              <li>מצלמה משולשת עם ייצוב אופטי</li>
+              <li>סוללה 5000mAh ליום שלם</li>
+              <li>מסך AMOLED 6.6"</li>
+            </ul>
+            <button class="secondary-btn" data-scroll="#contact">תיאום איסוף</button>
+          </article>
+          <article class="product-card">
+            <div class="badge">חבילה</div>
+            <h3>חבילת אביזרים פרימיום</h3>
+            <p class="product-meta">מגן מסך, כיסוי שקוף, מטען מהיר</p>
+            <p class="product-price">₪269</p>
+            <ul>
+              <li>מותאם לכל המותגים המובילים</li>
+              <li>אחריות החלפה במקרה של שבר</li>
+              <li>משלוח מהיר עד הבית</li>
+            </ul>
+            <button class="secondary-btn" data-scroll="#contact">להוספה להזמנה</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="section services" id="services">
+        <div class="section-header">
+          <p class="pill">שירותים משלימים</p>
+          <h2>אנחנו דואגים לכל מה שהטלפון שלכם צריך</h2>
+          <p class="section-sub">
+            תיקונים מהירים, שדרוגים ושירותי אבחון מקצועיים במעבדה המוסמכת שלנו.
+          </p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="icon">⚡</div>
+            <h3>תיקון מהיר</h3>
+            <p>החלפת מסך, סוללה ורכיבים קריטיים תוך שעות ספורות.</p>
+          </article>
+          <article class="service-card">
+            <div class="icon">🛡️</div>
+            <h3>אחריות וביטוח</h3>
+            <p>הרחבת אחריות מקורית וביטוח מכשיר מפני תאונות.</p>
+          </article>
+          <article class="service-card">
+            <div class="icon">📦</div>
+            <h3>משלוח מהיר</h3>
+            <p>איסוף עצמי, שליח עד הבית או שילוח אקספרס לעסקים.</p>
+          </article>
+          <article class="service-card">
+            <div class="icon">🤝</div>
+            <h3>ייעוץ אישי</h3>
+            <p>התאמת המכשיר והאביזרים המדויקים לפי הצרכים שלכם.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section highlight">
+        <div class="section-content">
+          <div>
+            <p class="pill">חוויה שמרגישה אחרת</p>
+            <h2>חוויית שירות שלא מתפשרת</h2>
+            <p class="section-sub">
+              צוות החנות שלנו מורכב ממומחי סלולר וטכנאי מעבדה מוסמכים. אנחנו זמינים
+              גם בצ'אט, גם בטלפון וגם בחנות הפיזית לטיפול מיידי בכל שאלה.
+            </p>
+            <div class="list-grid">
+              <div>
+                <h4>שקיפות מלאה</h4>
+                <p>מחירון ברור, הסברים מפורטים לפני כל תיקון ודיווח שוטף.</p>
+              </div>
+              <div>
+                <h4>זמינות 7 ימים</h4>
+                <p>תורים מהירים, זמינות טלפונית והודעות WhatsApp מסביב לשעון.</p>
+              </div>
+            </div>
+            <button class="primary-btn" data-scroll="#contact">בואו נדבר</button>
+          </div>
+          <div class="highlight-card" aria-hidden="true">
+            <p class="card-title">שירות מעבדה</p>
+            <ul>
+              <li>
+                <span>60 דק'</span>
+                <span>זמן טיפול ממוצע למסך</span>
+              </li>
+              <li>
+                <span>בדיקת מים</span>
+                <span>אבחון ללא עלות</span>
+              </li>
+              <li>
+                <span>מכשיר חלופי</span>
+                <span>במקרה של תיקון מורכב</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="contact-card">
+          <div>
+            <p class="pill">צור קשר</p>
+            <h2>ספרו לנו מה אתם צריכים</h2>
+            <p class="section-sub">
+              השאירו פרטים ואנחנו נחזור עם הצעה מדויקת, זמינות מלאי או תיאום תיקון.
+            </p>
+            <div class="contact-options">
+              <div>
+                <p class="contact-label">טלפון</p>
+                <p class="contact-value">03-555-1234</p>
+              </div>
+              <div>
+                <p class="contact-label">WhatsApp</p>
+                <p class="contact-value">050-777-2020</p>
+              </div>
+              <div>
+                <p class="contact-label">כתובת</p>
+                <p class="contact-value">דיזנגוף 123, תל אביב</p>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form">
+            <label>
+              שם מלא
+              <input type="text" name="name" placeholder="כיצד לפנות אליך?" required />
+            </label>
+            <label>
+              טלפון או אימייל
+              <input type="text" name="contact" placeholder="050-000-0000 או example@mail" required />
+            </label>
+            <label>
+              נושא הפנייה
+              <select name="topic" required>
+                <option value="">בחרו נושא</option>
+                <option>רכישת מכשיר</option>
+                <option>תיקון דחוף</option>
+                <option>ציוד לעסק</option>
+                <option>שאלה כללית</option>
+              </select>
+            </label>
+            <label>
+              איך נוכל לעזור?
+              <textarea name="message" rows="4" placeholder="ספרו לנו מה חשוב לכם"></textarea>
+            </label>
+            <button type="submit" class="primary-btn">שלחו פנייה</button>
+            <p class="form-note">נחזור אליכם תוך 2 שעות עסקים.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> SmartCell. כל הזכויות שמורות.</p>
+      <div class="footer-links">
+        <a href="#hero">דף הבית</a>
+        <a href="#products">מוצרים</a>
+        <a href="#services">שירותים</a>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
   </body>
 </html>
